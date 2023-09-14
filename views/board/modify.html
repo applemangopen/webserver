@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>modify 페이지입니다.</h2>
+        <form method="post" action="/boards/modify?id={{id}}">
+            <ul>
+                <li><input type="text" name="title" value="{{title}}" /></li>
+                <li><input type="text" name="writer" value="{{writer}}" /></li>
+                <li><textarea name="content" id="" cols="30" rows="10">{{content}}</textarea></li>
+            </ul>
+            <button type="submit">수정완료</button>
+        </form>
+    </body>
+</html>
